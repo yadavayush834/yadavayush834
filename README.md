@@ -1,12 +1,55 @@
 <div align="center">
 
-<a href="https://github.com/yadavayush834">
-  <img src="assets/banner.svg" alt="Ayush Yadav Dynamic ASCII Terminal" width="100%" />
-</a>
+```text
+                                :  .         .::       ':        ::        ::       :.y. :     
+                              .: :::       :" ::       :        ::      .:'':      .yyy.':    
+                              .' ::F.     :'   ::    :::::::::::::.     :'  ':    .y::Fy ':   
+                              :  ::FF.   :'     : .::" ::      ::  ::  .:    ':  .yF::Fy  :   
+                              : .:F:FF..:       :::'    :      :     :::'     '::yF:::Fy  :   
+                              : ::FF:FF:'      .:::     :.     :      :.      .yFF::::Fy  :   
+                              : ::FFF:FF.      :' ::    ':    .:     : :.    .yFF:::::Fy  :   
+                              : :FFFF"FFFy.   .:   :     :    :'    :   :. .yyFF::::::Fy  :   
+                              : :FFFFyy:FFy. .:'   ':    ::::::   .'     "yyFF::::::::Fy  :   
+                              : :FFFFy:::FFFy:.     ':  : :  ::. .'     .yyFF:::::::::Fy  :   
+                              : :FFFFy::::FFFyy.     :::' :  : '::    .yyFF:::::::::::Fy:.:   
+                              : :FFFFy::::::"FFy.   :: :  : ::  : :  .yyF:::::::::::::FFy":   
+                              : ::FFFyy:::::::FFF.::    : : :  :  ::.yF:::::::::::::::Fy: :   
+                              :  :FFyyyy::::::::FFy.     ::::::   .yyF:::::::::::::::Fy': :   
+                              :  :FFyyyyYYY::::::.FFFy::  :::    yyFF::::::::::::::yyFy : :   
+                              : .::FFFyyyYYYYY:::::.FFF    ::   FFyyy:::::::::::yyyyFy' : :   
+                              :.:  'FFFyyyYYYYyyy::FFF::::::::::FFyyyy::::::::yyyyyyyY:.: :   
+                              :':   :FFFyyYYYYyyy:FF'   . ::::. 'FFFyyyyyy::yyyyyyyyY":::::   
+                              : :.  'FFFyyyyyYyyyFF:   :' :  : :  'FFFyyyyyyyyyyyyyY'  ":::   
+                              ': :   'FyyyyyyyyFF'  :."  .:  :  ". ."FFFyyyyyyyyyyY'   :::'   
+                               : :    'FFyyyyFF:.   .:   :    :   :   'FFFyyyyyyyY'    : :    
+                               : ':    :FFyFF'  :. .: :  :    :   :     :FFFyyyyY'     : :    
+                               ': :   :'FFFF'    :::    ::    :.:" :. .: 'FFFFYY'     : :'    
+                                . ': :' 'FF'     ::     :"::::::    : :   'FFFy::.   .: :     
+                                ': ::'    ":    :':.    :      :     ::.      :" ":  :  :     
+                                 . .:      '.  :'  :.  .:      ::   ::':.    :"   "::" :'     
+                                 ' ::.      : :     '. :       :: :::  ':.  :      ::  :      
+                                  ::  :     '::      '::.      ::::     ': :      :::  :      
+                                  ':   :.   :::       :'::::::::::       ::      :' :.:'      
+                                   :   ':  :' '.      :        ':.      .:.     :'  :::       
+                                   :    "::'   ':.    :         ':     .:':.   :'   "::       
+                                   '.    ".      ':. :           :   .:'  ':. .:     :'       
+                                    ::.   ":.      ':::::.       :: ::'    ': :'     :        
+                                    : ": .: ':.     .:   ":::::::;:::'      :::     :'        
+                                    :  "::    '.    :'            :       ."":.     :         
+                                    :   ::     '.   :             :     .:'   :.   .'         
+                                    ':  ::.     ':..:              :   .'     ':  :'          
+                                    _:".: ":      '':.             : .:"       :.:'           
+                 [WILU]      .....-'.: .:  ".      :"'':::::::..   .:'         ::             
+      _.-.:"'---....._   _.-:."     .: : ".  :.  ::           '":::::.        :":             
+   ."' ."             """ .".......: : :. :". ": :                  ::      .:" :.            
+ .:.  :                .."        ..:  : ":  ". :                    :.   .::" :':".          
+"   ':""'...        .."        ..:  :  :   :   ":                    ::  :"":  : :  "-.       
+   ."       """"..::::........"  :. :  :   :     ".                  :.-:" .:  : ':    "-.    
+  :              ::         :   :  :'  :   :       '--____________---"  :  :'  :  :       '-.
+```
 
-<br />
-
-### ⚡ Backend & Applied AI Engineer • Delhi, India
+### ⚡ Ayush Yadav • Backend & Applied AI Engineer
+<p><b>Delhi, India • Digital India Corp Intern • 61 Repositories</b></p>
 
 [![GitHub](https://img.shields.io/badge/GitHub-61_Repositories-18181b?style=flat-square&logo=github&logoColor=white)](https://github.com/yadavayush834)
 [![LeetCode](https://img.shields.io/badge/LeetCode-300+_Solved-18181b?style=flat-square&logo=leetcode&logoColor=FFA116)](https://leetcode.com/u/ayushwell100)
