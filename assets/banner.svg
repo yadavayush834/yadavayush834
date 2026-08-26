@@ -1,35 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 170" width="100%" height="170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="100%" height="200">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Gradients -->
+    <linearGradient id="grad-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <linearGradient id="grad-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
     <style>
       .term-bg { fill: #09090b; stroke: #27272a; stroke-width: 1.5; rx: 12px; }
       .term-header { fill: #18181b; }
-      .term-title { fill: #a1a1aa; font-family: monospace; font-size: 11px; font-weight: 600; }
-      .ascii-line { fill: url(#grad); font-family: ui-monospace, "Courier New", monospace; font-size: 12px; font-weight: bold; letter-spacing: 0px; white-space: pre; }
-      .blink { animation: blinker 1s linear infinite; }
-      @keyframes blinker { 50% { opacity: 0; } }
+      .term-title { fill: #a1a1aa; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 600; }
+      .tag { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 700; }
+      
+      .ascii-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+        font-size: 12px;
+        font-weight: 800;
+        white-space: pre;
+        letter-spacing: 0px;
+      }
+
+      /* Staggered 16s Animation Cycle */
+      @keyframes showFrame1 {
+        0%, 22% { opacity: 1; transform: translateY(0); }
+        25%, 97% { opacity: 0; transform: translateY(6px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes showFrame2 {
+        0%, 22% { opacity: 0; transform: translateY(6px); }
+        25%, 47% { opacity: 1; transform: translateY(0); }
+        50%, 100% { opacity: 0; transform: translateY(6px); }
+      }
+      @keyframes showFrame3 {
+        0%, 47% { opacity: 0; transform: translateY(6px); }
+        50%, 72% { opacity: 1; transform: translateY(0); }
+        75%, 100% { opacity: 0; transform: translateY(6px); }
+      }
+      @keyframes showFrame4 {
+        0%, 72% { opacity: 0; transform: translateY(6px); }
+        75%, 97% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(6px); }
+      }
+
+      .frame-1 { animation: showFrame1 16s infinite ease-in-out; }
+      .frame-2 { animation: showFrame2 16s infinite ease-in-out; }
+      .frame-3 { animation: showFrame3 16s infinite ease-in-out; }
+      .frame-4 { animation: showFrame4 16s infinite ease-in-out; }
+
+      .cursor { animation: blink 1s step-start infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
     </style>
   </defs>
 
-  <!-- Terminal Window -->
-  <rect x="5" y="5" width="840" height="160" class="term-bg" />
+  <!-- Terminal Window Background -->
+  <rect x="5" y="5" width="870" height="190" class="term-bg" />
   
-  <!-- Header Bar -->
-  <path d="M 5 17 Q 5 5 17 5 L 833 5 Q 845 5 845 17 L 845 34 L 5 34 Z" class="term-header" />
-  <circle cx="25" cy="19" r="5" fill="#ef4444" />
-  <circle cx="42" cy="19" r="5" fill="#eab308" />
-  <circle cx="59" cy="19" r="5" fill="#22c55e" />
-  <text x="80" y="23" class="term-title">ayush@dev-host: ~/ascii_identity.sh — [ interactive-cycler ]</text>
+  <!-- Terminal Top Bar -->
+  <path d="M 5 17 Q 5 5 17 5 L 863 5 Q 875 5 875 17 L 875 36 L 5 36 Z" class="term-header" />
+  <circle cx="25" cy="20" r="5.5" fill="#ef4444" />
+  <circle cx="42" cy="20" r="5.5" fill="#eab308" />
+  <circle cx="59" cy="20" r="5.5" fill="#22c55e" />
+  <text x="80" y="24" class="term-title">ayush@archlinux: ~/identity/render_ascii.sh (auto-cycling styles)</text>
 
-  <!-- ASCII Art Lines -->
-  <text x="35" y="60" class="ascii-line"> █████╗ ██╗   ██╗██╗   ██╗███████╗██╗  ██╗    ██╗   ██╗ █████╗ ██████╗  █████╗ ██╗   ██╗</text>
-  <text x="35" y="76" class="ascii-line">██╔══██╗╚██╗ ██╔╝██║   ██║██╔════╝██║  ██║    ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██║   ██║</text>
-  <text x="35" y="92" class="ascii-line">███████║ ╚████╔╝ ██║   ██║███████╗███████║     ╚████╔╝ ███████║██║  ██║███████║██║   ██║</text>
-  <text x="35" y="108" class="ascii-line">██╔══██║  ╚██╔╝  ██║   ██║╚════██║██╔══██║      ╚██╔╝  ██╔══██║██║  ██║██╔══██║╚██╗ ██╔╝</text>
-  <text x="35" y="124" class="ascii-line">██║  ██║   ██║   ╚██████╔╝███████║██║  ██║       ██║   ██║  ██║██████╔╝██║  ██║ ╚████╔╝ </text>
-  <text x="35" y="140" class="ascii-line">╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝  ╚═══╝  </text>
+  <!-- ==================== FRAME 1: 3D ANSI SOLID (CYAN/INDIGO) ==================== -->
+  <g class="frame-1">
+    <rect x="730" y="16" width="130" height="15" rx="4" fill="#0c4a6e" />
+    <text x="738" y="27" fill="#38bdf8" class="tag">STYLE 1: ANSI 3D</text>
+    
+    <text x="35" y="70" fill="url(#grad-cyan)" class="ascii-text"> █████╗ ██╗   ██╗██╗   ██╗███████╗██╗  ██╗    ██╗   ██╗ █████╗ ██████╗  █████╗ ██╗   ██╗</text>
+    <text x="35" y="87" fill="url(#grad-cyan)" class="ascii-text">██╔══██╗╚██╗ ██╔╝██║   ██║██╔════╝██║  ██║    ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██║   ██║</text>
+    <text x="35" y="104" fill="url(#grad-cyan)" class="ascii-text">███████║ ╚████╔╝ ██║   ██║███████╗███████║     ╚████╔╝ ███████║██║  ██║███████║██║   ██║</text>
+    <text x="35" y="121" fill="url(#grad-cyan)" class="ascii-text">██╔══██║  ╚██╔╝  ██║   ██║╚════██║██╔══██║      ╚██╔╝  ██╔══██║██║  ██║██╔══██║╚██╗ ██╔╝</text>
+    <text x="35" y="138" fill="url(#grad-cyan)" class="ascii-text">██║  ██║   ██║   ╚██████╔╝███████║██║  ██║       ██║   ██║  ██║██████╔╝██║  ██║ ╚████╔╝ </text>
+    <text x="35" y="155" fill="url(#grad-cyan)" class="ascii-text">╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝  ╚═══╝  </text>
+    <rect x="735" y="143" width="8" height="14" fill="#38bdf8" class="cursor" />
+  </g>
+
+  <!-- ==================== FRAME 2: SLANTED CYBER (PINK/PURPLE) ==================== -->
+  <g class="frame-2">
+    <rect x="730" y="16" width="130" height="15" rx="4" fill="#581c87" />
+    <text x="738" y="27" fill="#f472b6" class="tag">STYLE 2: CYBER SLANT</text>
+    
+    <text x="65" y="75" fill="url(#grad-pink)" class="ascii-text">     __ _ _   _ _   _ ___ _   _    __   __ _   ____    _   __   __</text>
+    <text x="65" y="93" fill="url(#grad-pink)" class="ascii-text">    / _\ | | | | | | / __| |_| |   \ \ / // \ |  _ \  / \  \ \ / /</text>
+    <text x="65" y="111" fill="url(#grad-pink)" class="ascii-text">   / /_| |_| | |_| | \__ \  _  |    \ V // _ \| | | |/ _ \  \ V / </text>
+    <text x="65" y="129" fill="url(#grad-pink)" class="ascii-text">  / /_ |___  |___  | |___/ | | |     | |/ ___ \ |_| / ___ \  | |  </text>
+    <text x="65" y="147" fill="url(#grad-pink)" class="ascii-text">  \/_/     |_/   |_/ |___/_| |_|     |_/_/   \_\____/_/   \_\|_|  </text>
+    <rect x="735" y="135" width="8" height="14" fill="#f472b6" class="cursor" />
+  </g>
+
+  <!-- ==================== FRAME 3: MONO TERMINAL (AMBER/ORANGE) ==================== -->
+  <g class="frame-3">
+    <rect x="730" y="16" width="130" height="15" rx="4" fill="#78350f" />
+    <text x="738" y="27" fill="#fbbf24" class="tag">STYLE 3: RETRO MONO</text>
+    
+    <text x="60" y="75" fill="url(#grad-amber)" class="ascii-text">    ___   __   __ _   _ ____  _   _    __   __    _    ____    _   __   __</text>
+    <text x="60" y="93" fill="url(#grad-amber)" class="ascii-text">   / _ \  \ \ / /| | | / ___|| | | |   \ \ / /   / \  |  _ \  / \  \ \ / /</text>
+    <text x="60" y="111" fill="url(#grad-amber)" class="ascii-text">  / /_\ \  \ V / | | | \___ \| |_| |    \ V /   / _ \ | | | |/ _ \  \ V / </text>
+    <text x="60" y="129" fill="url(#grad-amber)" class="ascii-text">  |  _  |   | |  | |_| |___) |  _  |     | |   / ___ \| |_| / ___ \  | |  </text>
+    <text x="60" y="147" fill="url(#grad-amber)" class="ascii-text">  |_| |_|   |_|   \___/|____/|_| |_|     |_|  /_/   \_\____/_/   \_\ |_|  </text>
+    <rect x="735" y="135" width="8" height="14" fill="#fbbf24" class="cursor" />
+  </g>
+
+  <!-- ==================== FRAME 4: MATRIX MINIMAL (EMERALD) ==================== -->
+  <g class="frame-4">
+    <rect x="730" y="16" width="130" height="15" rx="4" fill="#064e3b" />
+    <text x="738" y="27" fill="#34d399" class="tag">STYLE 4: MATRIX GLYPH</text>
+    
+    <text x="110" y="85" fill="url(#grad-emerald)" class="ascii-text" font-size="16px">█████╗ ██╗   ██╗██╗   ██╗███████╗██╗  ██╗   ██╗   ██╗ █████╗ ██████╗  █████╗ ██╗   ██╗</text>
+    <text x="110" y="105" fill="url(#grad-emerald)" class="ascii-text" font-size="16px">██╔══██╗╚██╗ ██╔╝██║   ██║██╔════╝██║  ██║   ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██║   ██║</text>
+    <text x="110" y="125" fill="url(#grad-emerald)" class="ascii-text" font-size="16px">███████║ ╚████╔╝ ██║   ██║███████╗███████║    ╚████╔╝ ███████║██║  ██║███████║██║   ██║</text>
+    <text x="110" y="145" fill="url(#grad-emerald)" class="ascii-text" font-size="16px">╚═╝  ╚═╝  ╚═══╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═══╝  ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝  ╚═══╝ </text>
+    <rect x="735" y="133" width="8" height="14" fill="#34d399" class="cursor" />
+  </g>
 </svg>
