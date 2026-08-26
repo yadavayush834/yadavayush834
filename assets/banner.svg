@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 170" width="100%" height="170">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <style>
+      .term-bg { fill: #09090b; stroke: #27272a; stroke-width: 1.5; rx: 12px; }
+      .term-header { fill: #18181b; }
+      .term-title { fill: #a1a1aa; font-family: monospace; font-size: 11px; font-weight: 600; }
+      .ascii-line { fill: url(#grad); font-family: ui-monospace, "Courier New", monospace; font-size: 12px; font-weight: bold; letter-spacing: 0px; white-space: pre; }
+      .blink { animation: blinker 1s linear infinite; }
+      @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <!-- Terminal Window -->
+  <rect x="5" y="5" width="840" height="160" class="term-bg" />
+  
+  <!-- Header Bar -->
+  <path d="M 5 17 Q 5 5 17 5 L 833 5 Q 845 5 845 17 L 845 34 L 5 34 Z" class="term-header" />
+  <circle cx="25" cy="19" r="5" fill="#ef4444" />
+  <circle cx="42" cy="19" r="5" fill="#eab308" />
+  <circle cx="59" cy="19" r="5" fill="#22c55e" />
+  <text x="80" y="23" class="term-title">ayush@dev-host: ~/ascii_identity.sh — [ interactive-cycler ]</text>
+
+  <!-- ASCII Art Lines -->
+  <text x="35" y="60" class="ascii-line"> █████╗ ██╗   ██╗██╗   ██╗███████╗██╗  ██╗    ██╗   ██╗ █████╗ ██████╗  █████╗ ██╗   ██╗</text>
+  <text x="35" y="76" class="ascii-line">██╔══██╗╚██╗ ██╔╝██║   ██║██╔════╝██║  ██║    ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██║   ██║</text>
+  <text x="35" y="92" class="ascii-line">███████║ ╚████╔╝ ██║   ██║███████╗███████║     ╚████╔╝ ███████║██║  ██║███████║██║   ██║</text>
+  <text x="35" y="108" class="ascii-line">██╔══██║  ╚██╔╝  ██║   ██║╚════██║██╔══██║      ╚██╔╝  ██╔══██║██║  ██║██╔══██║╚██╗ ██╔╝</text>
+  <text x="35" y="124" class="ascii-line">██║  ██║   ██║   ╚██████╔╝███████║██║  ██║       ██║   ██║  ██║██████╔╝██║  ██║ ╚████╔╝ </text>
+  <text x="35" y="140" class="ascii-line">╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝  ╚═══╝  </text>
+</svg>
