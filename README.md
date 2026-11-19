@@ -32,7 +32,7 @@
 
 <!--RECENT:start-->
 - **[jjk-open](https://github.com/yadavayush834/jjk-open)** <sub>· today</sub>
-- **[machypr](https://github.com/yadavayush834/machypr)** — mac os inspired arch hyrland setup <sub>· today</sub>
+- **[machypr](https://github.com/yadavayush834/machypr)** — mac os inspired arch hyrland setup <sub>· yesterday</sub>
 - **[yadavayush834.github.io](https://github.com/yadavayush834/yadavayush834.github.io)** <sub>· 4 days ago</sub>
 - **[lens](https://github.com/yadavayush834/lens)** <sub>· 4 days ago</sub>
 - **[timestamp](https://github.com/yadavayush834/timestamp)** <sub>· 5 days ago</sub>
