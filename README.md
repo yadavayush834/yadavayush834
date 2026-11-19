@@ -17,7 +17,7 @@
 
 | Project | What it is | Stack |
 |---|---|---|
-| **[jjk-open](https://github.com/yadavayush834/jjk-open)** · [▶ play](https://yadavayush834.github.io/jjk-open/) | Cast Blue, Red and Hollow Purple with your bare hands through the webcam | MediaPipe · Canvas · Web Workers |
+| **[jjk-open](https://github.com/yadavayush834/jjk-open)** · [▶ play](https://ayushy.me/jjk-open/) | Cast Blue, Red and Hollow Purple with your bare hands through the webcam | MediaPipe · Canvas · Web Workers |
 | **[MacHypr](https://github.com/yadavayush834/machypr)** | A macOS-inspired desktop for Arch + Hyprland: native menu bar, smart dock | Hyprland · QML · Python |
 | **[Lens](https://github.com/yadavayush834/lens)** | Tells which camera took a photo, even between two phones of the same model, using sensor noise (PRNU) | Python · signal processing |
 | **[Spirit Clash](https://github.com/yadavayush834/raylib-fighter)** | Anime-inspired 2D arena fighter with solo AI, local versus and training mode | C17 · raylib |
