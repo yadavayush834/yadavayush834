@@ -24,9 +24,7 @@
 | **[lil-agent](https://github.com/yadavayush834/lil-agent)** | Offline 1B chat + Hindi/Hinglish voice companion for everyday laptops | TypeScript · local LLM |
 | **[Patchwork Studio](https://github.com/yadavayush834/patchwork-studio)** | A browser studio for websites that feel handmade and alive | TypeScript |
 
-### 🛰️ Live from GitHub
-
-<img src="assets/stats.svg" alt="Live GitHub stats, refreshed daily" width="100%" />
+<img src="assets/night.svg" alt="Pixel art night skyline" width="100%" />
 
 **Recently pushed** <sub>(auto-updated daily)</sub>
 
